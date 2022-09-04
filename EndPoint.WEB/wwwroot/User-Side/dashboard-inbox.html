@@ -1,0 +1,744 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" href="dashboard-css/vendor/simple-line-icons.css">
+	<link rel="stylesheet" href="dashboard-css/style.css">
+	<!-- favicon -->
+	<link rel="icon" href="favicon.ico">
+	<title>زمرد اژدها | صفحه داشبورد</title>
+</head>
+<body>
+
+	<!-- SIDE MENU -->
+	<div id="dashboard-options-menu" class="side-menu dashboard left closed">
+        <!-- SVG PLUS -->
+		<svg class="svg-plus">
+			<use xlink:href="#svg-plus"></use>
+		</svg>
+		<!-- /SVG PLUS -->
+        
+		<!-- SIDE MENU HEADER -->
+		<div class="side-menu-header">
+			<!-- USER QUICKVIEW -->
+			<div class="user-quickview">
+				<!-- USER AVATAR -->
+				<a href="author-profile.html">
+				<div class="outer-ring">
+					<div class="inner-ring"></div>
+					<figure class="user-avatar">
+						<img src="dashboard-images/avatars/avatar_01.jpg" alt="avatar">
+					</figure>
+				</div>
+				</a>
+				<!-- /USER AVATAR -->
+
+				<!-- USER INFORMATION -->
+				<p class="user-name">جانی فیشر</p>
+				<p class="user-money">65000</p>
+				<!-- /USER INFORMATION -->
+			</div>
+			<!-- /USER QUICKVIEW -->
+		</div>
+		<!-- /SIDE MENU HEADER -->
+
+		<!-- SIDE MENU TITLE -->
+		<p class="side-menu-title">حساب کاربری</p>
+		<!-- /SIDE MENU TITLE -->
+
+		<!-- DROPDOWN -->
+		<ul class="dropdown dark hover-effect interactive">
+			<!-- DROPDOWN ITEM -->
+			<li class="dropdown-item active">
+				<a href="dashboard-settings.html">
+                    <span class="sl-icon icon-settings"></span>
+                    تنظیمات اکانت
+                </a>
+			</li>
+			<!-- /DROPDOWN ITEM -->
+
+			<!-- DROPDOWN ITEM -->
+			<li class="dropdown-item">
+				<a href="dashboard-notifications.html">
+                    <span class="sl-icon icon-star"></span>
+                    اعلان ها
+                </a>
+                <!-- PIN -->
+                <span class="pin soft-edged big primary">49</span>
+                <!-- /PIN -->
+			</li>
+			<!-- /DROPDOWN ITEM -->
+
+			<!-- DROPDOWN ITEM -->
+			<li class="dropdown-item interactive">
+				<a href="#">
+                    <span class="sl-icon icon-envelope"></span>
+                    پیام ها
+                    <!-- SVG ARROW -->
+					<svg class="svg-arrow">
+						<use xlink:href="#svg-arrow"></use>
+					</svg>
+					<!-- /SVG ARROW -->
+				</a>
+
+				<!-- INNER DROPDOWN -->
+				<ul class="inner-dropdown">
+					<!-- INNER DROPDOWN ITEM -->
+					<li class="inner-dropdown-item">
+						<a href="dashboard-inbox.html">صندوق دریافت</a>
+						<!-- PIN -->
+						<span class="pin soft-edged secondary">2</span>
+						<!-- /PIN -->
+					</li>
+					<!-- /INNER DROPDOWN ITEM -->
+
+					<!-- INNER DROPDOWN ITEM -->
+					<li class="inner-dropdown-item">
+						<a href="dashboard-inbox-v2.html">صندوق دریافت نسخه 2</a>
+					</li>
+					<!-- /INNER DROPDOWN ITEM -->
+
+					<!-- INNER DROPDOWN ITEM -->
+					<li class="inner-dropdown-item">
+						<a href="dashboard-openmessage.html">پیام باز شده</a>
+					</li>
+					<!-- /INNER DROPDOWN ITEM -->
+
+					<!-- INNER DROPDOWN ITEM -->
+					<li class="inner-dropdown-item">
+						<a href="dashboard-inbox.html">پیام علامت شده</a>
+					</li>
+					<!-- /INNER DROPDOWN ITEM -->
+
+					<!-- INNER DROPDOWN ITEM -->
+					<li class="inner-dropdown-item">
+						<a href="dashboard-inbox.html">حذف پیام</a>
+					</li>
+					<!-- /INNER DROPDOWN ITEM -->
+				</ul>
+				<!-- INNER DROPDOWN -->
+
+                <!-- PIN -->
+                <span class="pin soft-edged big secondary">!</span>
+                <!-- /PIN -->
+			</li>
+			<!-- /DROPDOWN ITEM -->
+
+			<!-- DROPDOWN ITEM -->
+			<li class="dropdown-item">
+				<a href="dashboard-purchases.html">
+                    <span class="sl-icon icon-tag"></span>
+                    خرید های شما                </a>
+			</li>
+			<!-- /DROPDOWN ITEM -->
+
+			<!-- DROPDOWN ITEM -->
+			<li class="dropdown-item">
+				<a href="dashboard-buycredits.html">
+                    <span class="sl-icon icon-credit-card"></span>
+                    افزایش اعتبار
+                </a>
+			</li>
+			<!-- /DROPDOWN ITEM -->
+		</ul>
+		<!-- /DROPDOWN -->
+
+        <!-- SIDE MENU TITLE -->
+		<p class="side-menu-title">اطلاعات و آمار</p>
+		<!-- /SIDE MENU TITLE -->
+
+		<!-- DROPDOWN -->
+		<ul class="dropdown dark hover-effect">
+			<!-- DROPDOWN ITEM -->
+			<li class="dropdown-item">
+				<a href="dashboard-statement.html">
+                    <span class="sl-icon icon-layers"></span>
+                    اطلاعات فروش
+                </a>
+			</li>
+			<!-- /DROPDOWN ITEM -->
+
+			<!-- DROPDOWN ITEM -->
+			<li class="dropdown-item">
+				<a href="dashboard-statistics.html">
+                    <span class="sl-icon icon-chart"></span>
+                    آمار کلی
+                </a>
+			</li>
+			<!-- /DROPDOWN ITEM -->
+		</ul>
+		<!-- /DROPDOWN -->
+
+         <!-- SIDE MENU TITLE -->
+		<p class="side-menu-title">ابزارهای نویسنده</p>
+		<!-- /SIDE MENU TITLE -->
+
+		<!-- DROPDOWN -->
+		<ul class="dropdown dark hover-effect">
+			<!-- DROPDOWN ITEM -->
+			<li class="dropdown-item">
+				<a href="dashboard-uploaditem.html">
+                    <span class="sl-icon icon-arrow-up-circle"></span>
+                    آپلود محصول
+                </a>
+			</li>
+			<!-- /DROPDOWN ITEM -->
+
+			<!-- DROPDOWN ITEM -->
+			<li class="dropdown-item">
+				<a href="dashboard-manageitems.html">
+                    <span class="sl-icon icon-folder-alt"></span>
+                    مدیریت محصولات
+                </a>
+			</li>
+			<!-- /DROPDOWN ITEM -->
+
+            <!-- DROPDOWN ITEM -->
+			<li class="dropdown-item">
+				<a href="dashboard-withdrawals.html">
+                    <span class="sl-icon icon-wallet"></span>
+                    برداشت از حساب
+                </a>
+			</li>
+			<!-- /DROPDOWN ITEM -->
+		</ul>
+		<!-- /DROPDOWN -->
+
+        <a href="#" class="button medium secondary">خروج از مدیریت</a>
+	</div>
+	<!-- /SIDE MENU -->
+
+    <!-- DASHBOARD BODY -->
+    <div class="dashboard-body">
+        <!-- DASHBOARD HEADER -->
+        <div class="dashboard-header retracted">
+            <!-- DB CLOSE BUTTON -->
+            <a href="index.html" class="db-close-button">
+               <img src="dashboard-images/dashboard/back-icon.png" alt="back-icon">
+            </a>
+            <!-- DB CLOSE BUTTON -->
+
+			<!-- DB OPTIONS BUTTON -->
+            <div class="db-options-button">
+               <img src="dashboard-images/dashboard/db-list-right.png" alt="db-list-left">
+			   <img src="dashboard-images/dashboard/close-icon.png" alt="close-icon">
+            </div>
+            <!-- DB OPTIONS BUTTON -->
+
+            <!-- DASHBOARD HEADER ITEM -->
+            <div class="dashboard-header-item title">
+                <!-- DB SIDE MENU HANDLER -->
+                 <div class="db-side-menu-handler">
+                    <img src="dashboard-images/dashboard/db-list-left.png" alt="db-list-right">
+                </div>
+                <!-- /DB SIDE MENU HANDLER -->
+                <h6>صفحه داشبورد</h6>
+            </div>
+            <!-- /DASHBOARD HEADER ITEM -->
+
+			<!-- DASHBOARD HEADER ITEM -->
+            <div class="dashboard-header-item form">
+                <form class="dashboard-search">
+                    <input type="text" name="search" id="search_dashboard" placeholder="جستجو در داشبورد">
+                    <input type="image" src="dashboard-images/dashboard/search-icon.png" alt="search-icon">
+                </form>
+            </div>
+            <!-- /DASHBOARD HEADER ITEM -->
+
+            <!-- DASHBOARD HEADER ITEM -->
+            <div class="dashboard-header-item stats">
+                <!-- STATS META -->
+                <div class="stats-meta">
+                    <div class="pie-chart pie-chart1">
+                        <!-- SVG PLUS -->
+                        <svg class="svg-plus primary">
+                            <use xlink:href="#svg-plus"></use>
+                        </svg>
+                        <!-- /SVG PLUS -->
+                    </div>
+                    <h6>64.579</h6>
+                    <p>بازدید کلی</p>
+                </div>
+                <!-- /STATS META -->
+            </div>
+            <!-- /DASHBOARD HEADER ITEM -->
+
+            <!-- DASHBOARD HEADER ITEM -->
+            <div class="dashboard-header-item stats">
+                <!-- STATS META -->
+                <div class="stats-meta">
+                    <div class="pie-chart pie-chart2">
+                        <!-- SVG PLUS -->
+                        <svg class="svg-minus tertiary">
+                            <use xlink:href="#svg-minus"></use>
+                        </svg>
+                        <!-- /SVG PLUS -->
+                    </div>
+                    <h6>20.8</h6>
+                    <p>تعداد فروش در ماه</p>
+                </div>
+                <!-- /STATS META -->
+            </div>
+            <!-- /DASHBOARD HEADER ITEM -->
+
+            <!-- DASHBOARD HEADER ITEM -->
+            <div class="dashboard-header-item stats">
+                <!-- STATS META -->
+                <div class="stats-meta">
+                    <div class="pie-chart pie-chart3">
+                        <!-- SVG PLUS -->
+                        <svg class="svg-plus primary">
+                            <use xlink:href="#svg-plus"></use>
+                        </svg>
+                        <!-- /SVG PLUS -->
+                    </div>
+                    <h6>32200</h6>
+                    <p>بازدید این ماه</p>
+                </div>
+                <!-- /STATS META -->
+            </div>
+            <!-- /DASHBOARD HEADER ITEM -->
+
+			<!-- DASHBOARD HEADER ITEM -->
+            <div class="dashboard-header-item back-button">
+                <a href="index.html" class="button mid dark-light">بازگشت به خانه</a>
+            </div>
+            <!-- /DASHBOARD HEADER ITEM -->
+        </div>
+        <!-- DASHBOARD HEADER -->
+
+        <!-- DASHBOARD CONTENT -->
+        <div class="dashboard-content">
+            <!-- HEADLINE -->
+            <div class="headline buttons two primary">
+                <h4>پیام های دریافتی</h4>
+				<a href="#new-message-popup" class="button mid-short secondary open-new-message">پیام جدید</a>
+				<a href="#" class="button mid-short primary">حذف انتخاب شده ها</a>
+            </div>
+            <!-- /HEADLINE -->
+
+			<!-- INBOX MESSAGES -->
+			<div class="inbox-messages">
+				<!-- INBOX MESSAGE -->
+				<div class="inbox-message">
+					<div class="inbox-message-actions">
+						<!-- CHECKBOX -->
+						<input type="checkbox" id="msg1" name="msg1">
+						<label for="msg1" class="label-check">
+							<span class="checkbox primary"><span></span></span>
+						</label>
+						<!-- /CHECKBOX -->
+
+						<!-- STARRED -->
+						<div class="starred">
+							<img src="dashboard-images/dashboard/star-empty.png" class="hidden" alt="star-empty">
+							<img src="dashboard-images/dashboard/star-filled.png" class="visible" alt="star-filled">
+						</div>
+						<!-- /STARRED -->
+					</div>
+					
+					<div class="inbox-message-author">
+						<figure class="user-avatar">
+							<img src="dashboard-images/avatars/avatar_06.jpg" alt="user-img">
+						</figure>
+						<p class="text-header">
+							اسماعیل رنجبر
+							<span class="message-icon icon-envelope secondary"></span>
+						</p>
+					</div>
+
+					<a href="dashboard-openmessage.html">
+						<div class="inbox-message-content">
+							<p class="text-header">محصول نمونه</p>
+							<p class="description">طراح گرافیک از این متن به عنوان عنصری</p>
+						</div>
+					</a>
+
+					<div class="inbox-message-type">
+						<span class="message-icon icon-envelope secondary"></span>
+					</div>
+
+					<div class="inbox-message-date">
+						<p>اسفند ماه</p>
+					</div>
+				</div>
+				<!-- INBOX MESSAGE -->
+
+				<!-- INBOX MESSAGE -->
+				<div class="inbox-message">
+					<div class="inbox-message-actions">
+						<!-- CHECKBOX -->
+						<input type="checkbox" id="msg2" name="msg2" checked>
+						<label for="msg2" class="label-check">
+							<span class="checkbox primary"><span></span></span>
+						</label>
+						<!-- /CHECKBOX -->
+
+						<!-- STARRED -->
+						<div class="starred">
+							<img src="dashboard-images/dashboard/star-empty.png" class="visible" alt="star-empty">
+							<img src="dashboard-images/dashboard/star-filled.png" class="hidden" alt="star-filled">
+						</div>
+						<!-- /STARRED -->
+					</div>
+					
+					<div class="inbox-message-author">
+						<figure class="user-avatar">
+							<img src="dashboard-images/avatars/avatar_04.jpg" alt="user-img">
+						</figure>
+						<p class="text-header">
+							امین اسماعیلی
+							<span class="message-icon icon-envelope-open"></span>
+						</p>
+					</div>
+
+					<a href="dashboard-openmessage.html">
+						<div class="inbox-message-content">
+							<p class="text-header normal">محصول نمونه</p>
+							<p class="description">طراح گرافیک از این متن به عنوان عنصری</p>
+						</div>
+					</a>
+
+					<div class="inbox-message-type">
+						<span class="message-icon icon-envelope-open"></span>
+					</div>
+
+					<div class="inbox-message-date">
+						<p>بهمن ماه</p>
+					</div>
+				</div>
+				<!-- INBOX MESSAGE -->
+
+				<!-- INBOX MESSAGE -->
+				<div class="inbox-message">
+					<div class="inbox-message-actions">
+						<!-- CHECKBOX -->
+						<input type="checkbox" id="msg3" name="msg3">
+						<label for="msg3" class="label-check">
+							<span class="checkbox primary"><span></span></span>
+						</label>
+						<!-- /CHECKBOX -->
+
+						<!-- STARRED -->
+						<div class="starred">
+							<img src="dashboard-images/dashboard/star-empty.png" class="visible" alt="star-empty">
+							<img src="dashboard-images/dashboard/star-filled.png" class="hidden" alt="star-filled">
+						</div>
+						<!-- /STARRED -->
+					</div>
+					
+					<div class="inbox-message-author">
+						<figure class="user-avatar">
+							<img src="dashboard-images/avatars/avatar_07.jpg" alt="user-img">
+						</figure>
+						<p class="text-header">
+							دنیا محمدی
+							<span class="message-icon icon-envelope secondary"></span>	
+						</p>
+					</div>
+
+					<a href="dashboard-openmessage.html">
+						<div class="inbox-message-content">
+							<p class="text-header">خرید محصول</p>
+							<p class="description">طراح گرافیک از این متن به عنوان عنصری</p>
+						</div>
+					</a>
+
+					<div class="inbox-message-type">
+						<span class="message-icon icon-envelope secondary"></span>
+					</div>
+
+					<div class="inbox-message-date">
+						<p>فروردین ماه</p>
+					</div>
+				</div>
+				<!-- INBOX MESSAGE -->
+
+				<!-- INBOX MESSAGE -->
+				<div class="inbox-message">
+					<div class="inbox-message-actions">
+						<!-- CHECKBOX -->
+						<input type="checkbox" id="msg4" name="msg4">
+						<label for="msg4" class="label-check">
+							<span class="checkbox primary"><span></span></span>
+						</label>
+						<!-- /CHECKBOX -->
+
+						<!-- STARRED -->
+						<div class="starred">
+							<img src="dashboard-images/dashboard/star-empty.png" class="visible" alt="star-empty">
+							<img src="dashboard-images/dashboard/star-filled.png" class="hidden" alt="star-filled">
+						</div>
+						<!-- /STARRED -->
+					</div>
+					
+					<div class="inbox-message-author">
+						<figure class="user-avatar">
+							<img src="dashboard-images/avatars/avatar_08.jpg" alt="user-img">
+						</figure>
+						<p class="text-header">
+							ابراهیم غلام وند
+							<span class="message-icon icon-action-undo"></span>
+						</p>
+					</div>
+
+					<a href="dashboard-openmessage.html">
+						<div class="inbox-message-content">
+							<p class="text-header normal">خرید قالب</p>
+							<p class="description">طراح گرافیک از این متن به عنوان عنصری</p>
+						</div>
+					</a>
+
+					<div class="inbox-message-type">
+						<span class="message-icon icon-action-undo"></span>
+					</div>
+
+					<div class="inbox-message-date">
+						<p>مهر ماه</p>
+					</div>
+				</div>
+				<!-- INBOX MESSAGE -->
+
+				<!-- INBOX MESSAGE -->
+				<div class="inbox-message">
+					<div class="inbox-message-actions">
+						<!-- CHECKBOX -->
+						<input type="checkbox" id="msg5" name="msg5">
+						<label for="msg5" class="label-check">
+							<span class="checkbox primary"><span></span></span>
+						</label>
+						<!-- /CHECKBOX -->
+
+						<!-- STARRED -->
+						<div class="starred">
+							<img src="dashboard-images/dashboard/star-empty.png" class="hidden" alt="star-empty">
+							<img src="dashboard-images/dashboard/star-filled.png" class="visible" alt="star-filled">
+						</div>
+						<!-- /STARRED -->
+					</div>
+					
+					<div class="inbox-message-author">
+						<figure class="user-avatar">
+							<img src="dashboard-images/avatars/avatar_02.jpg" alt="user-img">
+						</figure>
+						<p class="text-header">
+							سعید قاضی نژاد
+							<span class="message-icon icon-envelope-open"></span>
+						</p>
+					</div>
+
+					<a href="dashboard-openmessage.html">
+						<div class="inbox-message-content">
+							<p class="text-header normal">محصول نمونه</p>
+							<p class="description">طراح گرافیک از این متن به عنوان عنصری</p>
+						</div>
+					</a>
+
+					<div class="inbox-message-type">
+						<span class="message-icon icon-envelope-open"></span>
+					</div>
+
+					<div class="inbox-message-date">
+						<p>آبان ماه</p>
+					</div>
+				</div>
+				<!-- INBOX MESSAGE -->
+
+				<!-- INBOX MESSAGE -->
+				<div class="inbox-message">
+					<div class="inbox-message-actions">
+						<!-- CHECKBOX -->
+						<input type="checkbox" id="msg6" name="msg6" checked>
+						<label for="msg6" class="label-check">
+							<span class="checkbox primary"><span></span></span>
+						</label>
+						<!-- /CHECKBOX -->
+
+						<!-- STARRED -->
+						<div class="starred">
+							<img src="dashboard-images/dashboard/star-empty.png" class="visible" alt="star-empty">
+							<img src="dashboard-images/dashboard/star-filled.png" class="hidden" alt="star-filled">
+						</div>
+						<!-- /STARRED -->
+					</div>
+					
+					<div class="inbox-message-author">
+						<figure class="user-avatar">
+							<img src="dashboard-images/avatars/avatar_03.jpg" alt="user-img">
+						</figure>
+						<p class="text-header">
+							عادل جمشید رخ
+							<span class="message-icon icon-envelope-open"></span>
+						</p>
+					</div>
+
+					<a href="dashboard-openmessage.html">
+						<div class="inbox-message-content">
+							<p class="text-header normal">محصول نمونه</p>
+							<p class="description">طراح گرافیک از این متن به عنوان عنصری</p>
+						</div>
+					</a>
+
+					<div class="inbox-message-type">
+						<span class="message-icon icon-envelope-open"></span>
+					</div>
+
+					<div class="inbox-message-date">
+						<p>دی ماه</p>
+					</div>
+				</div>
+				<!-- INBOX MESSAGE -->
+
+				<!-- INBOX MESSAGE -->
+				<div class="inbox-message">
+					<div class="inbox-message-actions">
+						<!-- CHECKBOX -->
+						<input type="checkbox" id="msg7" name="msg7" checked>
+						<label for="msg7" class="label-check">
+							<span class="checkbox primary"><span></span></span>
+						</label>
+						<!-- /CHECKBOX -->
+
+						<!-- STARRED -->
+						<div class="starred">
+							<img src="dashboard-images/dashboard/star-empty.png" class="visible" alt="star-empty">
+							<img src="dashboard-images/dashboard/star-filled.png" class="hidden" alt="star-filled">
+						</div>
+						<!-- /STARRED -->
+					</div>
+					
+					<div class="inbox-message-author">
+						<figure class="user-avatar">
+							<img src="dashboard-images/avatars/avatar_06.jpg" alt="user-img">
+						</figure>
+						<p class="text-header">
+							امیر محمدی
+							<span class="message-icon icon-envelope-open"></span>
+						</p>
+					</div>
+
+					<a href="dashboard-openmessage.html">
+						<div class="inbox-message-content">
+							<p class="text-header normal">محصول نمونه</p>
+							<p class="description">طراح گرافیک از این متن به عنوان عنصری</p>
+						</div>
+					</a>
+
+					<div class="inbox-message-type">
+						<span class="message-icon icon-envelope-open"></span>
+					</div>
+
+					<div class="inbox-message-date">
+						<p>آذر ماه</p>
+					</div>
+				</div>
+				<!-- INBOX MESSAGE -->
+
+				<!-- INBOX MESSAGE -->
+				<div class="inbox-message">
+					<div class="inbox-message-actions">
+						<!-- CHECKBOX -->
+						<input type="checkbox" id="msg8" name="msg8">
+						<label for="msg8" class="label-check">
+							<span class="checkbox primary"><span></span></span>
+						</label>
+						<!-- /CHECKBOX -->
+
+						<!-- STARRED -->
+						<div class="starred">
+							<img src="dashboard-images/dashboard/star-empty.png" class="visible" alt="star-empty">
+							<img src="dashboard-images/dashboard/star-filled.png" class="hidden" alt="star-filled">
+						</div>
+						<!-- /STARRED -->
+					</div>
+					
+					<div class="inbox-message-author">
+						<figure class="user-avatar">
+							<img src="dashboard-images/avatars/avatar_05.jpg" alt="user-img">
+						</figure>
+						<p class="text-header">
+							عابد کریمی
+							<span class="message-icon icon-envelope-open"></span>
+						</p>
+					</div>
+
+					<a href="dashboard-openmessage.html">
+						<div class="inbox-message-content">
+							<p class="text-header normal">محصول نمونه</p>
+							<p class="description">طراح گرافیک از این متن به عنوان عنصری</p>
+						</div>
+					</a>
+
+					<div class="inbox-message-type">
+						<span class="message-icon icon-envelope-open"></span>
+					</div>
+
+					<div class="inbox-message-date">
+						<p>اردیبهشت ماه</p>
+					</div>
+				</div>
+				<!-- INBOX MESSAGE -->
+
+				<!-- PAGER -->
+				<div class="pager-wrap">
+					<div class="pager primary">
+						<div class="pager-item"><p>1</p></div>
+						<div class="pager-item active"><p>2</p></div>
+						<div class="pager-item"><p>3</p></div>
+						<div class="pager-item"><p>...</p></div>
+						<div class="pager-item"><p>17</p></div>
+					</div>
+				</div>
+				<!-- /PAGER -->
+			</div>
+			<!-- /INBOX MESSAGES -->
+        </div>
+        <!-- DASHBOARD CONTENT -->
+    </div>
+    <!-- /DASHBOARD BODY -->
+
+	<div class="shadow-film closed"></div>
+
+<!-- SVG ARROW -->
+<svg style="display: none;">	
+	<symbol id="svg-arrow" viewBox="0 0 3.923 6.64014" preserveAspectRatio="xMinYMin meet">
+		<path d="M3.711,2.92L0.994,0.202c-0.215-0.213-0.562-0.213-0.776,0c-0.215,0.215-0.215,0.562,0,0.777l2.329,2.329
+			L0.217,5.638c-0.215,0.215-0.214,0.562,0,0.776c0.214,0.214,0.562,0.215,0.776,0l2.717-2.718C3.925,3.482,3.925,3.135,3.711,2.92z"/>
+	</symbol>
+</svg>
+<!-- /SVG ARROW -->
+
+<!-- SVG PLUS -->
+<svg style="display: none;">
+	<symbol id="svg-plus" viewBox="0 0 13 13" preserveAspectRatio="xMinYMin meet">
+		<rect x="5" width="3" height="13"/>
+		<rect y="5" width="13" height="3"/>
+	</symbol>
+</svg>
+<!-- /SVG PLUS -->
+
+<!-- SVG MINUS -->
+<svg style="display: none;">
+	<symbol id="svg-minus" viewBox="0 0 13 13" preserveAspectRatio="xMinYMin meet">
+		<rect y="5" width="13" height="3"/>
+	</symbol>
+</svg>
+<!-- /SVG MINUS -->
+
+<!-- jQuery -->
+<script src="dashboard-js/vendor/jquery-3.1.0.min.js"></script>
+<!-- Magnific Popup -->
+<script src="dashboard-js/vendor/jquery.magnific-popup.min.js"></script>
+<!-- XM Pie Chart -->
+<script src="dashboard-js/vendor/jquery.xmpiechart.min.js"></script>
+<!-- Side Menu -->
+<script src="dashboard-js/side-menu.js"></script>
+<!-- Dashboard Header -->
+<script src="dashboard-js/dashboard-header.js"></script>
+<!-- Dashboard Inbox -->
+<script src="dashboard-js/dashboard-inbox.js"></script>
+<!-- Inbox Messages -->
+<script src="dashboard-js/inbox-messages.js"></script>
+</body>
+</html>

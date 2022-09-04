@@ -1,0 +1,691 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" href="dashboard-css/vendor/simple-line-icons.css">
+    <link rel="stylesheet" href="dashboard-css/vendor/magnific-popup.css">
+	<link rel="stylesheet" href="dashboard-css/style.css">
+	<!-- favicon -->
+	<link rel="icon" href="favicon.ico">
+	<title>زمرد اژدها | صفحه داشبورد</title>
+</head>
+<body>
+
+    <!-- FORM POPUP -->
+	<div id="recommendation-popup" class="form-popup new-message mfp-hide">
+		<!-- FORM POPUP CONTENT -->
+		<div class="form-popup-content">
+			<h4 class="popup-title">ارسال نظر شما</h4>
+			<!-- LINE SEPARATOR -->
+			<hr class="line-separator">
+			<!-- /LINE SEPARATOR -->
+            <div class="recommendation-wrap">
+                <div class="recommendation-item">
+                    <a href="#" class="recommendation good">
+                        <span class="icon-like"></span>
+                    </a>
+                    <p class="text-header small">خوب</p>
+                </div>
+                
+                <div class="recommendation-item">
+                    <a href="#" class="recommendation bad hoverable">
+                        <span class="icon-dislike"></span>
+                    </a>
+                    <p class="text-header small">بد</p>
+                </div>
+            </div>
+			<form class="recommendation-form">
+				<!-- INPUT CONTAINER -->
+				<div class="input-container">
+					<label for="comment" class="rl-label b-label">: نظر شما</label>
+                    <textarea name="comment" id="comment" placeholder="نظر خود را وارد کنید"></textarea>
+				</div>
+				<!-- /INPUT CONTAINER -->
+                <p class="highlighted"><span>یادداشت </span> طراح گرافیک از این متن به عنوان عنصری از ترکیب بندی برای پر کردن صفحه و ارایه اولیه شکل ظاهری و کلی طرح سفارش گرفته شده استفاده می نماید</p>
+
+				<button class="button mid dark">ارسال <span class="primary">نــــظر</span></button>
+			</form>
+		</div>
+		<!-- /FORM POPUP CONTENT -->
+	</div>
+	<!-- /FORM POPUP -->
+
+	<!-- SIDE MENU -->
+	<div id="dashboard-options-menu" class="side-menu dashboard left closed">
+        <!-- SVG PLUS -->
+		<svg class="svg-plus">
+			<use xlink:href="#svg-plus"></use>
+		</svg>
+		<!-- /SVG PLUS -->
+        
+		<!-- SIDE MENU HEADER -->
+		<div class="side-menu-header">
+			<!-- USER QUICKVIEW -->
+			<div class="user-quickview">
+				<!-- USER AVATAR -->
+				<a href="author-profile.html">
+				<div class="outer-ring">
+					<div class="inner-ring"></div>
+					<figure class="user-avatar">
+						<img src="dashboard-images/avatars/avatar_01.jpg" alt="avatar">
+					</figure>
+				</div>
+				</a>
+				<!-- /USER AVATAR -->
+
+				<!-- USER INFORMATION -->
+				<p class="user-name">جانی فیشر</p>
+				<p class="user-money">65000</p>
+				<!-- /USER INFORMATION -->
+			</div>
+			<!-- /USER QUICKVIEW -->
+		</div>
+		<!-- /SIDE MENU HEADER -->
+
+		<!-- SIDE MENU TITLE -->
+		<p class="side-menu-title">حساب کاربری</p>
+		<!-- /SIDE MENU TITLE -->
+
+		<!-- DROPDOWN -->
+		<ul class="dropdown dark hover-effect interactive">
+			<!-- DROPDOWN ITEM -->
+			<li class="dropdown-item active">
+				<a href="dashboard-settings.html">
+                    <span class="sl-icon icon-settings"></span>
+                    تنظیمات اکانت
+                </a>
+			</li>
+			<!-- /DROPDOWN ITEM -->
+
+			<!-- DROPDOWN ITEM -->
+			<li class="dropdown-item">
+				<a href="dashboard-notifications.html">
+                    <span class="sl-icon icon-star"></span>
+                    اعلان ها
+                </a>
+                <!-- PIN -->
+                <span class="pin soft-edged big primary">49</span>
+                <!-- /PIN -->
+			</li>
+			<!-- /DROPDOWN ITEM -->
+
+			<!-- DROPDOWN ITEM -->
+			<li class="dropdown-item interactive">
+				<a href="#">
+                    <span class="sl-icon icon-envelope"></span>
+                    پیام ها
+                    <!-- SVG ARROW -->
+					<svg class="svg-arrow">
+						<use xlink:href="#svg-arrow"></use>
+					</svg>
+					<!-- /SVG ARROW -->
+				</a>
+
+				<!-- INNER DROPDOWN -->
+				<ul class="inner-dropdown">
+					<!-- INNER DROPDOWN ITEM -->
+					<li class="inner-dropdown-item">
+						<a href="dashboard-inbox.html">صندوق دریافت</a>
+						<!-- PIN -->
+						<span class="pin soft-edged secondary">2</span>
+						<!-- /PIN -->
+					</li>
+					<!-- /INNER DROPDOWN ITEM -->
+
+					<!-- INNER DROPDOWN ITEM -->
+					<li class="inner-dropdown-item">
+						<a href="dashboard-inbox-v2.html">صندوق دریافت نسخه 2</a>
+					</li>
+					<!-- /INNER DROPDOWN ITEM -->
+
+					<!-- INNER DROPDOWN ITEM -->
+					<li class="inner-dropdown-item">
+						<a href="dashboard-openmessage.html">پیام باز شده</a>
+					</li>
+					<!-- /INNER DROPDOWN ITEM -->
+
+					<!-- INNER DROPDOWN ITEM -->
+					<li class="inner-dropdown-item">
+						<a href="dashboard-inbox.html">پیام علامت شده</a>
+					</li>
+					<!-- /INNER DROPDOWN ITEM -->
+
+					<!-- INNER DROPDOWN ITEM -->
+					<li class="inner-dropdown-item">
+						<a href="dashboard-inbox.html">حذف پیام</a>
+					</li>
+					<!-- /INNER DROPDOWN ITEM -->
+				</ul>
+				<!-- INNER DROPDOWN -->
+
+                <!-- PIN -->
+                <span class="pin soft-edged big secondary">!</span>
+                <!-- /PIN -->
+			</li>
+			<!-- /DROPDOWN ITEM -->
+
+			<!-- DROPDOWN ITEM -->
+			<li class="dropdown-item">
+				<a href="dashboard-purchases.html">
+                    <span class="sl-icon icon-tag"></span>
+                    خرید های شما                </a>
+			</li>
+			<!-- /DROPDOWN ITEM -->
+
+			<!-- DROPDOWN ITEM -->
+			<li class="dropdown-item">
+				<a href="dashboard-buycredits.html">
+                    <span class="sl-icon icon-credit-card"></span>
+                    افزایش اعتبار
+                </a>
+			</li>
+			<!-- /DROPDOWN ITEM -->
+		</ul>
+		<!-- /DROPDOWN -->
+
+        <!-- SIDE MENU TITLE -->
+		<p class="side-menu-title">اطلاعات و آمار</p>
+		<!-- /SIDE MENU TITLE -->
+
+		<!-- DROPDOWN -->
+		<ul class="dropdown dark hover-effect">
+			<!-- DROPDOWN ITEM -->
+			<li class="dropdown-item">
+				<a href="dashboard-statement.html">
+                    <span class="sl-icon icon-layers"></span>
+                    اطلاعات فروش
+                </a>
+			</li>
+			<!-- /DROPDOWN ITEM -->
+
+			<!-- DROPDOWN ITEM -->
+			<li class="dropdown-item">
+				<a href="dashboard-statistics.html">
+                    <span class="sl-icon icon-chart"></span>
+                    آمار کلی
+                </a>
+			</li>
+			<!-- /DROPDOWN ITEM -->
+		</ul>
+		<!-- /DROPDOWN -->
+
+         <!-- SIDE MENU TITLE -->
+		<p class="side-menu-title">ابزارهای نویسنده</p>
+		<!-- /SIDE MENU TITLE -->
+
+		<!-- DROPDOWN -->
+		<ul class="dropdown dark hover-effect">
+			<!-- DROPDOWN ITEM -->
+			<li class="dropdown-item">
+				<a href="dashboard-uploaditem.html">
+                    <span class="sl-icon icon-arrow-up-circle"></span>
+                    آپلود محصول
+                </a>
+			</li>
+			<!-- /DROPDOWN ITEM -->
+
+			<!-- DROPDOWN ITEM -->
+			<li class="dropdown-item">
+				<a href="dashboard-manageitems.html">
+                    <span class="sl-icon icon-folder-alt"></span>
+                    مدیریت محصولات
+                </a>
+			</li>
+			<!-- /DROPDOWN ITEM -->
+
+            <!-- DROPDOWN ITEM -->
+			<li class="dropdown-item">
+				<a href="dashboard-withdrawals.html">
+                    <span class="sl-icon icon-wallet"></span>
+                    برداشت از حساب
+                </a>
+			</li>
+			<!-- /DROPDOWN ITEM -->
+		</ul>
+		<!-- /DROPDOWN -->
+
+        <a href="#" class="button medium secondary">خروج از مدیریت</a>
+	</div>
+	<!-- /SIDE MENU -->
+
+    <!-- DASHBOARD BODY -->
+    <div class="dashboard-body">
+        <!-- DASHBOARD HEADER -->
+        <div class="dashboard-header retracted">
+            <!-- DB CLOSE BUTTON -->
+            <a href="index.html" class="db-close-button">
+               <img src="dashboard-images/dashboard/back-icon.png" alt="back-icon">
+            </a>
+            <!-- DB CLOSE BUTTON -->
+
+			<!-- DB OPTIONS BUTTON -->
+            <div class="db-options-button">
+               <img src="dashboard-images/dashboard/db-list-right.png" alt="db-list-left">
+			   <img src="dashboard-images/dashboard/close-icon.png" alt="close-icon">
+            </div>
+            <!-- DB OPTIONS BUTTON -->
+
+            <!-- DASHBOARD HEADER ITEM -->
+            <div class="dashboard-header-item title">
+                <!-- DB SIDE MENU HANDLER -->
+                 <div class="db-side-menu-handler">
+                    <img src="dashboard-images/dashboard/db-list-left.png" alt="db-list-right">
+                </div>
+                <!-- /DB SIDE MENU HANDLER -->
+                <h6>صفحه داشبورد</h6>
+            </div>
+            <!-- /DASHBOARD HEADER ITEM -->
+
+			<!-- DASHBOARD HEADER ITEM -->
+            <div class="dashboard-header-item form">
+                <form class="dashboard-search">
+                    <input type="text" name="search" id="search_dashboard" placeholder="جستجو در داشبورد">
+                    <input type="image" src="dashboard-images/dashboard/search-icon.png" alt="search-icon">
+                </form>
+            </div>
+            <!-- /DASHBOARD HEADER ITEM -->
+
+            <!-- DASHBOARD HEADER ITEM -->
+            <div class="dashboard-header-item stats">
+                <!-- STATS META -->
+                <div class="stats-meta">
+                    <div class="pie-chart pie-chart1">
+                        <!-- SVG PLUS -->
+                        <svg class="svg-plus primary">
+                            <use xlink:href="#svg-plus"></use>
+                        </svg>
+                        <!-- /SVG PLUS -->
+                    </div>
+                    <h6>64.579</h6>
+                    <p>بازدید کلی</p>
+                </div>
+                <!-- /STATS META -->
+            </div>
+            <!-- /DASHBOARD HEADER ITEM -->
+
+            <!-- DASHBOARD HEADER ITEM -->
+            <div class="dashboard-header-item stats">
+                <!-- STATS META -->
+                <div class="stats-meta">
+                    <div class="pie-chart pie-chart2">
+                        <!-- SVG PLUS -->
+                        <svg class="svg-minus tertiary">
+                            <use xlink:href="#svg-minus"></use>
+                        </svg>
+                        <!-- /SVG PLUS -->
+                    </div>
+                    <h6>20.8</h6>
+                    <p>تعداد فروش در ماه</p>
+                </div>
+                <!-- /STATS META -->
+            </div>
+            <!-- /DASHBOARD HEADER ITEM -->
+
+            <!-- DASHBOARD HEADER ITEM -->
+            <div class="dashboard-header-item stats">
+                <!-- STATS META -->
+                <div class="stats-meta">
+                    <div class="pie-chart pie-chart3">
+                        <!-- SVG PLUS -->
+                        <svg class="svg-plus primary">
+                            <use xlink:href="#svg-plus"></use>
+                        </svg>
+                        <!-- /SVG PLUS -->
+                    </div>
+                    <h6>32200</h6>
+                    <p>بازدید این ماه</p>
+                </div>
+                <!-- /STATS META -->
+            </div>
+            <!-- /DASHBOARD HEADER ITEM -->
+
+			<!-- DASHBOARD HEADER ITEM -->
+            <div class="dashboard-header-item back-button">
+                <a href="index.html" class="button mid dark-light">بازگشت به خانه</a>
+            </div>
+            <!-- /DASHBOARD HEADER ITEM -->
+        </div>
+        <!-- DASHBOARD HEADER -->
+
+        <!-- DASHBOARD CONTENT -->
+        <div class="dashboard-content">
+            <!-- HEADLINE -->
+            <div class="headline purchases primary">
+                <h4>خرید های شما</h4>
+				<form id="purchase_filter_form" name="purchase_filter_form">
+					<label for="itemspp_filter" class="select-block">
+						<select name="itemspp_filter" id="itemspp_filter">
+							<option value="0">مورد در صفحه 12</option>
+							<option value="1">6 مورد در صفحه</option>
+						</select>
+						<!-- SVG ARROW -->
+						<svg class="svg-arrow">
+							<use xlink:href="#svg-arrow"></use>
+						</svg>
+						<!-- /SVG ARROW -->
+					</label>
+
+					<label for="date_filter" class="select-block">
+						<select name="date_filter" id="date_filter">
+							<option value="0">تاریخ (جدید به قدیم)</option>
+							<option value="1">تاریخ (قدیم به جدید)</option>
+						</select>
+						<!-- SVG ARROW -->
+						<svg class="svg-arrow">
+							<use xlink:href="#svg-arrow"></use>
+						</svg>
+						<!-- /SVG ARROW -->
+					</label>
+
+					<div class="search-form">
+						<input type="text" class="rounded search" name="search" id="search_products" placeholder="جستجوی محصولات">
+						<input type="image" src="dashboard-images/search-icon-small.png" alt="search-icon">
+					</div>
+				</form>
+            </div>
+            <!-- /HEADLINE -->
+
+            <!-- PURCHASES LIST -->
+            <div class="purchases-list">
+                <!-- PURCHASES LIST HEADER -->
+                <div class="purchases-list-header">
+                    <div class="purchases-list-header-date">
+                        <p class="text-header small">تاریخ</p>
+                    </div>
+                    <div class="purchases-list-header-details">
+                        <p class="text-header small">اطلاعات محصول</p>
+                    </div>
+                    <div class="purchases-list-header-info">
+                        <p class="text-header small">اطلاعات بیشتر</p>
+                    </div>
+                    <div class="purchases-list-header-price">
+                        <p class="text-header small">قیمت</p>
+                    </div>
+                    <div class="purchases-list-header-download">
+                        <p class="text-header small">دانلود</p>
+                    </div>
+                    <div class="purchases-list-header-recommend">
+                        <p class="text-header small">امتیاز</p>
+                    </div>
+                </div>
+                <!-- /PURCHASES LIST HEADER -->
+
+                <!-- PURCHASE ITEM -->
+                <div class="purchase-item">
+                    <div class="purchase-item-date">
+                        <p>فروردین , 1396</p>
+                    </div>
+                    <div class="purchase-item-details">
+                        <!-- ITEM PREVIEW -->
+                        <div class="item-preview">
+                            <figure class="product-preview-image small liquid">
+                                <img src="dashboard-images/items/westeros_s.jpg" alt="product-image">
+                            </figure>
+                            <p class="text-header">دانلود قالب اژدها</p>
+                            <p class="description">طراح گرافیک از این متن به عنوان عنصری از ترکیب بندی برای</p>
+                        </div>
+                        <!-- /ITEM PREVIEW -->
+                    </div>
+                    <div class="purchase-item-info">
+                        <p class="category primary">قالب اچ تی ام ال</p>
+                        <p><span class="light">لایسنس:</span> استاندارد</p>
+                        <p><span class="light">طراح :</span> بینک</p>
+                        <p class="text-header tiny">bink.ir</p>
+                    </div>
+                    <div class="purchase-item-price">
+                        <p class="price"><span></span>14000</p>
+                    </div>
+                    <div class="purchase-item-download">
+                        <a href="#" class="button dark-light">دانلود قالب</a>
+                    </div>
+                    <div class="purchase-item-recommend">
+                        <div class="recommendation-wrap">
+                            <a href="#recommendation-popup" class="recommendation good hoverable open-recommendation-form">
+                                <span class="icon-like"></span>
+                            </a>
+                            <a href="#recommendation-popup" class="recommendation bad hoverable open-recommendation-form">
+                                <span class="icon-dislike"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- /PURCHASE ITEM -->
+
+                <!-- PURCHASE ITEM -->
+                <div class="purchase-item">
+                    <div class="purchase-item-date">
+                        <p>فروردین , 1396</p>
+                    </div>
+                    <div class="purchase-item-details">
+                        <!-- ITEM PREVIEW -->
+                        <div class="item-preview">
+                            <figure class="product-preview-image small liquid">
+                                <img src="dashboard-images/items/westeros_s.jpg" alt="product-image">
+                            </figure>
+                            <p class="text-header">دانلود قالب اژدها</p>
+                            <p class="description">طراح گرافیک از این متن به عنوان عنصری از ترکیب بندی برای</p>
+                        </div>
+                        <!-- /ITEM PREVIEW -->
+                    </div>
+                    <div class="purchase-item-info">
+                        <p class="category primary">قالب اچ تی ام ال</p>
+                        <p><span class="light">لایسنس:</span> استاندارد</p>
+                        <p><span class="light">طراح :</span> بینک</p>
+                        <p class="text-header tiny">bink.ir</p>
+                    </div>
+                    <div class="purchase-item-price">
+                        <p class="price"><span></span>14000</p>
+                    </div>
+                    <div class="purchase-item-download">
+                        <a href="#" class="button dark-light">دانلود قالب</a>
+                    </div>
+                    <div class="purchase-item-recommend">
+                        <div class="recommendation-wrap">
+                            <a href="#recommendation-popup" class="recommendation good open-recommendation-form">
+                                <span class="icon-like"></span>
+                            </a>
+                            <a href="#recommendation-popup" class="recommendation bad hoverable open-recommendation-form">
+                                <span class="icon-dislike"></span>
+                            </a>
+                        </div>
+                        <p class="text-header">
+                            <a href="#recommendation-popup" class="open-recommendation-form">ارسال نظر</a>
+                        </p>
+                    </div>
+                </div>
+                <!-- /PURCHASE ITEM -->
+
+                <!-- PURCHASE ITEM -->
+                <div class="purchase-item">
+                    <div class="purchase-item-date">
+                        <p>فروردین , 1396</p>
+                    </div>
+                    <div class="purchase-item-details">
+                        <!-- ITEM PREVIEW -->
+                        <div class="item-preview">
+                            <figure class="product-preview-image small liquid">
+                                <img src="dashboard-images/items/westeros_s.jpg" alt="product-image">
+                            </figure>
+                            <p class="text-header">دانلود قالب اژدها</p>
+                            <p class="description">طراح گرافیک از این متن به عنوان عنصری از ترکیب بندی برای</p>
+                        </div>
+                        <!-- /ITEM PREVIEW -->
+                    </div>
+                    <div class="purchase-item-info">
+                        <p class="category primary">قالب اچ تی ام ال</p>
+                        <p><span class="light">لایسنس:</span> استاندارد</p>
+                        <p><span class="light">طراح :</span> بینک</p>
+                        <p class="text-header tiny">bink.ir</p>
+                    </div>
+                    <div class="purchase-item-price">
+                        <p class="price"><span></span>14000</p>
+                    </div>
+                    <div class="purchase-item-download">
+                        <a href="#" class="button dark-light">دانلود قالب</a>
+                    </div>
+                    <div class="purchase-item-recommend">
+                        <div class="recommendation-wrap">
+                            <a href="#recommendation-popup" class="recommendation good hoverable open-recommendation-form">
+                                <span class="icon-like"></span>
+                            </a>
+                            <a href="#recommendation-popup" class="recommendation bad open-recommendation-form">
+                                <span class="icon-dislike"></span>
+                            </a>
+                        </div>
+                        <p class="text-header">
+                            <a href="#recommendation-popup" class="open-recommendation-form">ارسال نظر</a>
+                        </p>
+                    </div>
+                </div>
+                <!-- /PURCHASE ITEM -->
+
+                <!-- PURCHASE ITEM -->
+                <div class="purchase-item">
+                    <div class="purchase-item-date">
+                        <p>فروردین , 1396</p>
+                    </div>
+                    <div class="purchase-item-details">
+                        <!-- ITEM PREVIEW -->
+                        <div class="item-preview">
+                            <figure class="product-preview-image small liquid">
+                                <img src="dashboard-images/items/westeros_s.jpg" alt="product-image">
+                            </figure>
+                            <p class="text-header">دانلود قالب اژدها</p>
+                            <p class="description">طراح گرافیک از این متن به عنوان عنصری از ترکیب بندی برای</p>
+                        </div>
+                        <!-- /ITEM PREVIEW -->
+                    </div>
+                    <div class="purchase-item-info">
+                        <p class="category primary">قالب اچ تی ام ال</p>
+                        <p><span class="light">لایسنس:</span> استاندارد</p>
+                        <p><span class="light">طراح :</span> بینک</p>
+                        <p class="text-header tiny">bink.ir</p>
+                    </div>
+                    <div class="purchase-item-price">
+                        <p class="price"><span></span>14000</p>
+                    </div>
+                    <div class="purchase-item-download">
+                        <a href="#" class="button dark-light">دانلود قالب</a>
+                    </div>
+                    <div class="purchase-item-recommend">
+                        <div class="recommendation-wrap">
+                            <a href="#recommendation-popup" class="recommendation good hoverable open-recommendation-form">
+                                <span class="icon-like"></span>
+                            </a>
+                            <a href="#recommendation-popup" class="recommendation bad hoverable open-recommendation-form">
+                                <span class="icon-dislike"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- /PURCHASE ITEM -->
+
+                 <!-- PURCHASE ITEM -->
+                <div class="purchase-item">
+                    <div class="purchase-item-date">
+                        <p>فروردین , 1396</p>
+                    </div>
+                    <div class="purchase-item-details">
+                        <!-- ITEM PREVIEW -->
+                        <div class="item-preview">
+                            <figure class="product-preview-image small liquid">
+                                <img src="dashboard-images/items/westeros_s.jpg" alt="product-image">
+                            </figure>
+                            <p class="text-header">دانلود قالب اژدها</p>
+                            <p class="description">طراح گرافیک از این متن به عنوان عنصری از ترکیب بندی برای</p>
+                        </div>
+                        <!-- /ITEM PREVIEW -->
+                    </div>
+                    <div class="purchase-item-info">
+                        <p class="category primary">قالب اچ تی ام ال</p>
+                        <p><span class="light">لایسنس:</span> استاندارد</p>
+                        <p><span class="light">طراح :</span> بینک</p>
+                        <p class="text-header tiny">bink.ir</p>
+                    </div>
+                    <div class="purchase-item-price">
+                        <p class="price"><span></span>14000</p>
+                    </div>
+                    <div class="purchase-item-download">
+                        <a href="#" class="button dark-light">دانلود قالب</a>
+                    </div>
+                    <div class="purchase-item-recommend">
+                        <div class="recommendation-wrap">
+                            <a href="#recommendation-popup" class="recommendation good open-recommendation-form">
+                                <span class="icon-like"></span>
+                            </a>
+                            <a href="#recommendation-popup" class="recommendation bad hoverable open-recommendation-form">
+                                <span class="icon-dislike"></span>
+                            </a>
+                        </div>
+                        <p class="text-header">
+                            <a href="#recommendation-popup" class="open-recommendation-form">ارسال نظر</a>
+                        </p>
+                    </div>
+                </div>
+                <!-- /PURCHASE ITEM -->
+
+                <!-- PAGER -->
+				<div class="pager-wrap">
+					<div class="pager primary">
+						<div class="pager-item"><p>1</p></div>
+						<div class="pager-item active"><p>2</p></div>
+						<div class="pager-item"><p>3</p></div>
+						<div class="pager-item"><p>...</p></div>
+						<div class="pager-item"><p>17</p></div>
+					</div>
+				</div>
+				<!-- /PAGER -->
+            </div>
+            <!-- /PURCHASES LIST -->
+        </div>
+        <!-- DASHBOARD CONTENT -->
+    </div>
+    <!-- /DASHBOARD BODY -->
+
+	<div class="shadow-film closed"></div>
+
+<!-- SVG ARROW -->
+<svg style="display: none;">	
+	<symbol id="svg-arrow" viewBox="0 0 3.923 6.64014" preserveAspectRatio="xMinYMin meet">
+		<path d="M3.711,2.92L0.994,0.202c-0.215-0.213-0.562-0.213-0.776,0c-0.215,0.215-0.215,0.562,0,0.777l2.329,2.329
+			L0.217,5.638c-0.215,0.215-0.214,0.562,0,0.776c0.214,0.214,0.562,0.215,0.776,0l2.717-2.718C3.925,3.482,3.925,3.135,3.711,2.92z"/>
+	</symbol>
+</svg>
+<!-- /SVG ARROW -->
+
+<!-- SVG PLUS -->
+<svg style="display: none;">
+	<symbol id="svg-plus" viewBox="0 0 13 13" preserveAspectRatio="xMinYMin meet">
+		<rect x="5" width="3" height="13"/>
+		<rect y="5" width="13" height="3"/>
+	</symbol>
+</svg>
+<!-- /SVG PLUS -->
+
+<!-- SVG MINUS -->
+<svg style="display: none;">
+	<symbol id="svg-minus" viewBox="0 0 13 13" preserveAspectRatio="xMinYMin meet">
+		<rect y="5" width="13" height="3"/>
+	</symbol>
+</svg>
+<!-- /SVG MINUS -->
+
+<!-- jQuery -->
+<script src="dashboard-js/vendor/jquery-3.1.0.min.js"></script>
+<!-- Magnific Popup -->
+<script src="dashboard-js/vendor/jquery.magnific-popup.min.js"></script>
+<!-- imgLiquid -->
+<script src="dashboard-js/vendor/imgLiquid-min.js"></script>
+<!-- XM Pie Chart -->
+<script src="dashboard-js/vendor/jquery.xmpiechart.min.js"></script>
+<!-- Side Menu -->
+<script src="dashboard-js/side-menu.js"></script>
+<!-- Dashboard Header -->
+<script src="dashboard-js/dashboard-header.js"></script>
+<!-- Liquid -->
+<script src="dashboard-js/liquid.js"></script>
+<!-- Dashboard Purchases -->
+<script src="dashboard-js/dashboard-purchases.js"></script>
+</body>
+</html>

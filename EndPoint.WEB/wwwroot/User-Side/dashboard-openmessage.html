@@ -1,0 +1,572 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" href="dashboard-css/vendor/simple-line-icons.css">
+	<link rel="stylesheet" href="dashboard-css/vendor/magnific-popup.css">
+	<link rel="stylesheet" href="dashboard-css/style.css">
+	<!-- favicon -->
+	<link rel="icon" href="favicon.ico">
+	<title>زمرد اژدها | صفحه داشبورد</title>
+</head>
+<body>
+
+	<!-- FORM POPUP -->
+	<div id="new-message-popup" class="form-popup new-message mfp-hide">
+		<!-- FORM POPUP CONTENT -->
+		<div class="form-popup-content">
+			<h4 class="popup-title">نوشتن پیام</h4>
+			<!-- LINE SEPARATOR -->
+			<hr class="line-separator">
+			<!-- /LINE SEPARATOR -->
+			<form class="new-message-form">
+				<!-- INPUT CONTAINER -->
+				<div class="input-container field-add">
+					<label for="mailto" class="rl-label b-label required">: به</label>
+					<label for="mailto" class="select-block">
+							<select name="mailto" id="mailto">
+								<option value="0">انتخای یک کاربر</option>
+								<option value="1">ابراهیم غلام وند</option>
+								<option value="2">امیر محمدی</option>
+							</select>
+							<!-- SVG ARROW -->
+							<svg class="svg-arrow">
+								<use xlink:href="#svg-arrow"></use>
+							</svg>
+							<!-- /SVG ARROW -->
+					</label>
+					<div class="button dark-light add-field">
+						<!-- SVG PLUS -->
+						<svg class="svg-plus">
+							<use xlink:href="#svg-plus"></use>
+						</svg>
+						<!-- /SVG PLUS -->
+					</div>
+				</div>
+				<!-- /INPUT CONTAINER -->
+
+				<!-- INPUT CONTAINER -->
+				<div class="input-container">
+					<label for="subject" class="rl-label b-label">: موضوع</label>
+					<input type="text" id="subject" name="subject" placeholder="موضوع خود را وارد کنید">
+				</div>
+				<!-- INPUT CONTAINER -->
+
+				<!-- INPUT CONTAINER -->
+				<div class="input-container">
+					<label for="message" class="rl-label b-label required">: پیام شما</label>
+					<textarea id="message" name="message" placeholder="پیام خود را وارد کنید"></textarea>
+				</div>
+				<!-- INPUT CONTAINER -->
+
+				<button class="button mid dark">ارسال <span class="primary">پیــام</span></button>
+			</form>
+		</div>
+		<!-- /FORM POPUP CONTENT -->
+	</div>
+	<!-- /FORM POPUP -->
+
+	<!-- SIDE MENU -->
+	<div id="dashboard-options-menu" class="side-menu dashboard left closed">
+        <!-- SVG PLUS -->
+		<svg class="svg-plus">
+			<use xlink:href="#svg-plus"></use>
+		</svg>
+		<!-- /SVG PLUS -->
+        
+		<!-- SIDE MENU HEADER -->
+		<div class="side-menu-header">
+			<!-- USER QUICKVIEW -->
+			<div class="user-quickview">
+				<!-- USER AVATAR -->
+				<a href="author-profile.html">
+				<div class="outer-ring">
+					<div class="inner-ring"></div>
+					<figure class="user-avatar">
+						<img src="dashboard-images/avatars/avatar_01.jpg" alt="avatar">
+					</figure>
+				</div>
+				</a>
+				<!-- /USER AVATAR -->
+
+				<!-- USER INFORMATION -->
+				<p class="user-name">جانی فیشر</p>
+				<p class="user-money">65000</p>
+				<!-- /USER INFORMATION -->
+			</div>
+			<!-- /USER QUICKVIEW -->
+		</div>
+		<!-- /SIDE MENU HEADER -->
+
+		<!-- SIDE MENU TITLE -->
+		<p class="side-menu-title">حساب کاربری</p>
+		<!-- /SIDE MENU TITLE -->
+
+		<!-- DROPDOWN -->
+		<ul class="dropdown dark hover-effect interactive">
+			<!-- DROPDOWN ITEM -->
+			<li class="dropdown-item active">
+				<a href="dashboard-settings.html">
+                    <span class="sl-icon icon-settings"></span>
+                    تنظیمات اکانت
+                </a>
+			</li>
+			<!-- /DROPDOWN ITEM -->
+
+			<!-- DROPDOWN ITEM -->
+			<li class="dropdown-item">
+				<a href="dashboard-notifications.html">
+                    <span class="sl-icon icon-star"></span>
+                    اعلان ها
+                </a>
+                <!-- PIN -->
+                <span class="pin soft-edged big primary">49</span>
+                <!-- /PIN -->
+			</li>
+			<!-- /DROPDOWN ITEM -->
+
+			<!-- DROPDOWN ITEM -->
+			<li class="dropdown-item interactive">
+				<a href="#">
+                    <span class="sl-icon icon-envelope"></span>
+                    پیام ها
+                    <!-- SVG ARROW -->
+					<svg class="svg-arrow">
+						<use xlink:href="#svg-arrow"></use>
+					</svg>
+					<!-- /SVG ARROW -->
+				</a>
+
+				<!-- INNER DROPDOWN -->
+				<ul class="inner-dropdown">
+					<!-- INNER DROPDOWN ITEM -->
+					<li class="inner-dropdown-item">
+						<a href="dashboard-inbox.html">صندوق دریافت</a>
+						<!-- PIN -->
+						<span class="pin soft-edged secondary">2</span>
+						<!-- /PIN -->
+					</li>
+					<!-- /INNER DROPDOWN ITEM -->
+
+					<!-- INNER DROPDOWN ITEM -->
+					<li class="inner-dropdown-item">
+						<a href="dashboard-inbox-v2.html">صندوق دریافت نسخه 2</a>
+					</li>
+					<!-- /INNER DROPDOWN ITEM -->
+
+					<!-- INNER DROPDOWN ITEM -->
+					<li class="inner-dropdown-item">
+						<a href="dashboard-openmessage.html">پیام باز شده</a>
+					</li>
+					<!-- /INNER DROPDOWN ITEM -->
+
+					<!-- INNER DROPDOWN ITEM -->
+					<li class="inner-dropdown-item">
+						<a href="dashboard-inbox.html">پیام علامت شده</a>
+					</li>
+					<!-- /INNER DROPDOWN ITEM -->
+
+					<!-- INNER DROPDOWN ITEM -->
+					<li class="inner-dropdown-item">
+						<a href="dashboard-inbox.html">حذف پیام</a>
+					</li>
+					<!-- /INNER DROPDOWN ITEM -->
+				</ul>
+				<!-- INNER DROPDOWN -->
+
+                <!-- PIN -->
+                <span class="pin soft-edged big secondary">!</span>
+                <!-- /PIN -->
+			</li>
+			<!-- /DROPDOWN ITEM -->
+
+			<!-- DROPDOWN ITEM -->
+			<li class="dropdown-item">
+				<a href="dashboard-purchases.html">
+                    <span class="sl-icon icon-tag"></span>
+                    خرید های شما                </a>
+			</li>
+			<!-- /DROPDOWN ITEM -->
+
+			<!-- DROPDOWN ITEM -->
+			<li class="dropdown-item">
+				<a href="dashboard-buycredits.html">
+                    <span class="sl-icon icon-credit-card"></span>
+                    افزایش اعتبار
+                </a>
+			</li>
+			<!-- /DROPDOWN ITEM -->
+		</ul>
+		<!-- /DROPDOWN -->
+
+        <!-- SIDE MENU TITLE -->
+		<p class="side-menu-title">اطلاعات و آمار</p>
+		<!-- /SIDE MENU TITLE -->
+
+		<!-- DROPDOWN -->
+		<ul class="dropdown dark hover-effect">
+			<!-- DROPDOWN ITEM -->
+			<li class="dropdown-item">
+				<a href="dashboard-statement.html">
+                    <span class="sl-icon icon-layers"></span>
+                    اطلاعات فروش
+                </a>
+			</li>
+			<!-- /DROPDOWN ITEM -->
+
+			<!-- DROPDOWN ITEM -->
+			<li class="dropdown-item">
+				<a href="dashboard-statistics.html">
+                    <span class="sl-icon icon-chart"></span>
+                    آمار کلی
+                </a>
+			</li>
+			<!-- /DROPDOWN ITEM -->
+		</ul>
+		<!-- /DROPDOWN -->
+
+         <!-- SIDE MENU TITLE -->
+		<p class="side-menu-title">ابزارهای نویسنده</p>
+		<!-- /SIDE MENU TITLE -->
+
+		<!-- DROPDOWN -->
+		<ul class="dropdown dark hover-effect">
+			<!-- DROPDOWN ITEM -->
+			<li class="dropdown-item">
+				<a href="dashboard-uploaditem.html">
+                    <span class="sl-icon icon-arrow-up-circle"></span>
+                    آپلود محصول
+                </a>
+			</li>
+			<!-- /DROPDOWN ITEM -->
+
+			<!-- DROPDOWN ITEM -->
+			<li class="dropdown-item">
+				<a href="dashboard-manageitems.html">
+                    <span class="sl-icon icon-folder-alt"></span>
+                    مدیریت محصولات
+                </a>
+			</li>
+			<!-- /DROPDOWN ITEM -->
+
+            <!-- DROPDOWN ITEM -->
+			<li class="dropdown-item">
+				<a href="dashboard-withdrawals.html">
+                    <span class="sl-icon icon-wallet"></span>
+                    برداشت از حساب
+                </a>
+			</li>
+			<!-- /DROPDOWN ITEM -->
+		</ul>
+		<!-- /DROPDOWN -->
+
+        <a href="#" class="button medium secondary">خروج از مدیریت</a>
+	</div>
+	<!-- /SIDE MENU -->
+
+    <!-- DASHBOARD BODY -->
+    <div class="dashboard-body">
+        <!-- DASHBOARD HEADER -->
+        <div class="dashboard-header retracted">
+            <!-- DB CLOSE BUTTON -->
+            <a href="index.html" class="db-close-button">
+               <img src="dashboard-images/dashboard/back-icon.png" alt="back-icon">
+            </a>
+            <!-- DB CLOSE BUTTON -->
+
+			<!-- DB OPTIONS BUTTON -->
+            <div class="db-options-button">
+               <img src="dashboard-images/dashboard/db-list-right.png" alt="db-list-left">
+			   <img src="dashboard-images/dashboard/close-icon.png" alt="close-icon">
+            </div>
+            <!-- DB OPTIONS BUTTON -->
+
+            <!-- DASHBOARD HEADER ITEM -->
+            <div class="dashboard-header-item title">
+                <!-- DB SIDE MENU HANDLER -->
+                 <div class="db-side-menu-handler">
+                    <img src="dashboard-images/dashboard/db-list-left.png" alt="db-list-right">
+                </div>
+                <!-- /DB SIDE MENU HANDLER -->
+                <h6>صفحه داشبورد</h6>
+            </div>
+            <!-- /DASHBOARD HEADER ITEM -->
+
+			<!-- DASHBOARD HEADER ITEM -->
+            <div class="dashboard-header-item form">
+                <form class="dashboard-search">
+                    <input type="text" name="search" id="search_dashboard" placeholder="جستجو در داشبورد">
+                    <input type="image" src="dashboard-images/dashboard/search-icon.png" alt="search-icon">
+                </form>
+            </div>
+            <!-- /DASHBOARD HEADER ITEM -->
+
+            <!-- DASHBOARD HEADER ITEM -->
+            <div class="dashboard-header-item stats">
+                <!-- STATS META -->
+                <div class="stats-meta">
+                    <div class="pie-chart pie-chart1">
+                        <!-- SVG PLUS -->
+                        <svg class="svg-plus primary">
+                            <use xlink:href="#svg-plus"></use>
+                        </svg>
+                        <!-- /SVG PLUS -->
+                    </div>
+                    <h6>64.579</h6>
+                    <p>بازدید کلی</p>
+                </div>
+                <!-- /STATS META -->
+            </div>
+            <!-- /DASHBOARD HEADER ITEM -->
+
+            <!-- DASHBOARD HEADER ITEM -->
+            <div class="dashboard-header-item stats">
+                <!-- STATS META -->
+                <div class="stats-meta">
+                    <div class="pie-chart pie-chart2">
+                        <!-- SVG PLUS -->
+                        <svg class="svg-minus tertiary">
+                            <use xlink:href="#svg-minus"></use>
+                        </svg>
+                        <!-- /SVG PLUS -->
+                    </div>
+                    <h6>20.8</h6>
+                    <p>تعداد فروش در ماه</p>
+                </div>
+                <!-- /STATS META -->
+            </div>
+            <!-- /DASHBOARD HEADER ITEM -->
+
+            <!-- DASHBOARD HEADER ITEM -->
+            <div class="dashboard-header-item stats">
+                <!-- STATS META -->
+                <div class="stats-meta">
+                    <div class="pie-chart pie-chart3">
+                        <!-- SVG PLUS -->
+                        <svg class="svg-plus primary">
+                            <use xlink:href="#svg-plus"></use>
+                        </svg>
+                        <!-- /SVG PLUS -->
+                    </div>
+                    <h6>32200</h6>
+                    <p>بازدید این ماه</p>
+                </div>
+                <!-- /STATS META -->
+            </div>
+            <!-- /DASHBOARD HEADER ITEM -->
+
+			<!-- DASHBOARD HEADER ITEM -->
+            <div class="dashboard-header-item back-button">
+                <a href="index.html" class="button mid dark-light">بازگشت به خانه</a>
+            </div>
+            <!-- /DASHBOARD HEADER ITEM -->
+        </div>
+        <!-- DASHBOARD HEADER -->
+
+        <!-- DASHBOARD CONTENT -->
+        <div class="dashboard-content">
+            <!-- HEADLINE -->
+            <div class="headline inbox buttons two primary">
+                <h4>پیام های خوانده شده</h4>
+				<div class="button-wrap">
+					<a href="#" class="button square dark-light">
+						<img src="dashboard-images/dashboard/close-icon-small.png" alt="close-icon">
+					</a>
+					<!-- SLIDE CONTROLS -->
+					<div class="slide-control-wrap main">
+						<div class="slide-control left">
+							<!-- SVG ARROW -->
+							<svg class="svg-arrow">
+								<use xlink:href="#svg-arrow"></use>
+							</svg>
+							<!-- /SVG ARROW -->
+						</div>
+
+						<div class="slide-control right">
+							<!-- SVG ARROW -->
+							<svg class="svg-arrow">
+								<use xlink:href="#svg-arrow"></use>
+							</svg>
+							<!-- /SVG ARROW -->
+						</div>
+					</div>
+					<!-- /SLIDE CONTROLS -->
+				</div>
+				<a href="#new-message-popup" class="button mid-short secondary open-new-message">پیام جدید</a>
+            </div>
+            <!-- /HEADLINE -->
+
+            <!-- INBOX MESSAGES PREVIEW -->
+            <div class="inbox-messages-preview full">
+                <!-- INBOX MESSAGE PREVIEW -->
+                <div class="inbox-message-preview">
+                    <div class="inbox-message-preview-header">
+                        <p class="text-header">
+                            سوالات درباره محصولات
+                            <img src="dashboard-images/dashboard/star-filled.png" alt="star-icon">
+                        </p>
+                    </div>
+
+                    <div class="inbox-message-preview-body">
+						<!-- COMMENT LIST -->
+						<div class="comment-list">
+							<!-- COMMENT -->
+							<div class="comment-wrap">
+								<!-- USER AVATAR -->
+								<a href="user-profile.html">
+									<figure class="user-avatar medium">
+										<img src="dashboard-images/avatars/avatar_06.jpg" alt="">
+									</figure>
+								</a>
+								<!-- /USER AVATAR -->
+								<div class="comment">
+									<p class="text-header">دنیا محمدی</p>
+									<p class="timestamp">دی ماه , 1395 - 8:22</p>
+									<a href="#" class="report">گزارش</a>
+									<p>طراح گرافیک از این متن به عنوان عنصری از ترکیب بندی برای پر کردن صفحه و ارایه اولیه شکل ظاهری و کلی طرح سفارش گرفته شده استفاده می نماید، تا از نظر گرافیکی نشانگر چگونگی نوع و اندازه فونت و ظاهر متن باشد. معمولا طراحان گرافیک برای صفحه‌آرایی، نخست از متن‌های آزمایشی و بی‌معنی استفاده می‌کنند تا صرفا به مشتری یا صاحب کار خود نشان دهند</p>
+								</div>
+							</div>
+							<!-- /COMMENT -->
+
+							<!-- LINE SEPARATOR -->
+							<hr class="line-separator">
+							<!-- /LINE SEPARATOR -->
+
+							<!-- COMMENT -->
+							<div class="comment-wrap">
+								<!-- USER AVATAR -->
+								<a href="user-profile.html">
+									<figure class="user-avatar medium">
+										<img src="dashboard-images/avatars/avatar_01.jpg" alt="">
+									</figure>
+								</a>
+								<!-- /USER AVATAR -->
+								<div class="comment">
+									<p class="text-header">دنیا محمدی</p>
+									<p class="timestamp">دی ماه , 1395 - 8:22</p>
+									<a href="#" class="report">گزارش</a>
+									<p>طراح گرافیک از این متن به عنوان عنصری از ترکیب بندی برای پر کردن صفحه و ارایه اولیه شکل ظاهری و کلی طرح سفارش گرفته شده استفاده می نماید، تا از نظر گرافیکی نشانگر چگونگی نوع و اندازه فونت و ظاهر متن باشد. معمولا طراحان گرافیک برای صفحه‌آرایی، نخست از متن‌های آزمایشی و بی‌معنی استفاده می‌کنند تا صرفا به مشتری یا صاحب کار خود نشان دهند</p>
+								</div>
+							</div>
+							<!-- /COMMENT -->
+
+							<!-- LINE SEPARATOR -->
+							<hr class="line-separator">
+							<!-- /LINE SEPARATOR -->
+
+							<!-- COMMENT -->
+							<div class="comment-wrap">
+								<!-- USER AVATAR -->
+								<a href="user-profile.html">
+									<figure class="user-avatar medium">
+										<img src="dashboard-images/avatars/avatar_06.jpg" alt="">
+									</figure>
+								</a>
+								<!-- /USER AVATAR -->
+								<div class="comment">
+									<p class="text-header">دنیا محمدی</p>
+									<p class="timestamp">دی ماه , 1395 - 8:22</p>
+									<a href="#" class="report">گزارش</a>
+									<p>طراح گرافیک از این متن به عنوان عنصری از ترکیب بندی برای پر کردن صفحه و ارایه اولیه شکل ظاهری و کلی طرح سفارش گرفته شده استفاده می نماید، تا از نظر گرافیکی نشانگر چگونگی نوع و اندازه فونت و ظاهر متن باشد. معمولا طراحان گرافیک برای صفحه‌آرایی، نخست از متن‌های آزمایشی و بی‌معنی استفاده می‌کنند تا صرفا به مشتری یا صاحب کار خود نشان دهند</p>
+								</div>
+							</div>
+							<!-- /COMMENT -->
+
+							<!-- LINE SEPARATOR -->
+							<hr class="line-separator">
+							<!-- /LINE SEPARATOR -->
+
+							<!-- COMMENT REPLY -->
+							<div class="comment-wrap comment-reply">
+								<!-- USER AVATAR -->
+								<a href="user-profile.html">
+									<figure class="user-avatar medium">
+										<img src="dashboard-images/avatars/avatar_01.jpg" alt="">
+									</figure>
+								</a>
+								<!-- /USER AVATAR -->
+
+								<!-- STYLE TOOL BAR -->
+								<div class="style-tool-bar">
+									<p class="text-header">ابزارهای نویسنده</p>
+
+									<!-- STYLE TOOL BAR OPTIONS -->
+									<ul class="style-tool-bar-options">
+										<li><p>H1</p></li>
+										<li><p>H2</p></li>
+										<li><p>H3</p></li>
+										<li><p>P</p></li>
+										<li><p>Divider</p></li>
+										<li><p>Bold</p></li>
+										<li><p>Link</p></li>
+										<li><p>Image</p></li>
+										<li><p>UL</p></li>
+										<li><p>LI</p></li>
+									</ul>
+									<!-- /STYLE TOOL BAR OPTIONS -->									
+								</div>
+								<!-- /STYLE TOOL BAR -->
+
+								<!-- COMMENT REPLY FORM -->
+								<form class="comment-reply-form">
+									<textarea name="treply" placeholder="پیام خود را بنویسید"></textarea>
+									<button class="button secondary">ارسال پاسخ</button>
+								</form>
+								<!-- /COMMENT REPLY FORM -->
+							</div>
+							<!-- /COMMENT REPLY -->
+						</div>
+						<!-- /COMMENT LIST -->
+                    </div>
+                </div>
+                <!-- /INBOX MESSAGE PREVIEW -->
+            </div>
+            <!-- /INBOX MESSAGES PREVIEW -->
+        </div>
+        <!-- DASHBOARD CONTENT -->
+    </div>
+    <!-- /DASHBOARD BODY -->
+
+	<div class="shadow-film closed"></div>
+
+<!-- SVG ARROW -->
+<svg style="display: none;">	
+	<symbol id="svg-arrow" viewBox="0 0 3.923 6.64014" preserveAspectRatio="xMinYMin meet">
+		<path d="M3.711,2.92L0.994,0.202c-0.215-0.213-0.562-0.213-0.776,0c-0.215,0.215-0.215,0.562,0,0.777l2.329,2.329
+			L0.217,5.638c-0.215,0.215-0.214,0.562,0,0.776c0.214,0.214,0.562,0.215,0.776,0l2.717-2.718C3.925,3.482,3.925,3.135,3.711,2.92z"/>
+	</symbol>
+</svg>
+<!-- /SVG ARROW -->
+
+<!-- SVG PLUS -->
+<svg style="display: none;">
+	<symbol id="svg-plus" viewBox="0 0 13 13" preserveAspectRatio="xMinYMin meet">
+		<rect x="5" width="3" height="13"/>
+		<rect y="5" width="13" height="3"/>
+	</symbol>
+</svg>
+<!-- /SVG PLUS -->
+
+<!-- SVG MINUS -->
+<svg style="display: none;">
+	<symbol id="svg-minus" viewBox="0 0 13 13" preserveAspectRatio="xMinYMin meet">
+		<rect y="5" width="13" height="3"/>
+	</symbol>
+</svg>
+<!-- /SVG MINUS -->
+
+<!-- jQuery -->
+<script src="dashboard-js/vendor/jquery-3.1.0.min.js"></script>
+<!-- Magnific Popup -->
+<script src="dashboard-js/vendor/jquery.magnific-popup.min.js"></script>
+<!-- XM Pie Chart -->
+<script src="dashboard-js/vendor/jquery.xmpiechart.min.js"></script>
+<!-- Side Menu -->
+<script src="dashboard-js/side-menu.js"></script>
+<!-- Dashboard Header -->
+<script src="dashboard-js/dashboard-header.js"></script>
+<!-- Dashboard Inbox -->
+<script src="dashboard-js/dashboard-inbox.js"></script>
+</body>
+</html>
