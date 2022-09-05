@@ -13,8 +13,12 @@
     <link rel="stylesheet" href="~/User-Side/css/vendor/tooltipster.css">
     <link rel="stylesheet" href="~/User-Side/css/vendor/owl.carousel.css">
     <link rel="stylesheet" href="~/User-Side/css/style.css">
-
+  
+      
  
+
+    <!-- Owl Stylesheets -->
+  
 
     <!-- favicon -->
     <link rel="icon" href="favicon.ico">
@@ -1334,13 +1338,103 @@
 					<div class="comment-wrap">
 
 					<div class="comment">
-                            	  
+                               
+             
+				 	<div class="badges-showcase column5-wrap">
+   
+				<div class="badges-showcase-item column">
+					<!-- LOCKED BADGE -->
+					<figure class="badge big liquid locked active">
+						<img src="~/User-Side/images/amoozesh.png" alt="tmlms">
+					</figure>
+					<!-- /LOCKED BADGE -->
+					<figure class="badge big liquid">
+						<img src="~/User-Side/images/amoozesh-color.png" alt="tmlms">
+					</figure>
+				
+					<!-- BADGE PROGRESS -->
+					<div class="badge-progress badge-progress5"></div>
+					<!-- /BADGE PROGRESS -->
+				</div>
+
+				<div class="badges-showcase-item column">
+					<!-- LOCKED BADGE -->
+					<figure class="badge big liquid locked active">
+						<img src="~/User-Side/images/miz.png" alt="desk-work">
+					</figure>
+					<!-- /LOCKED BADGE -->
+					<figure class="badge big liquid">
+						<img src="~/User-Side/images/miz-color.png" alt="desk-work">
+					</figure>
+				
+					<!-- BADGE PROGRESS -->
+					<div class="badge-progress badge-progress5"></div>
+					<!-- /BADGE PROGRESS -->
+				</div>
+
+				<div class="badges-showcase-item column">
+					<!-- LOCKED BADGE -->
+					<figure class="badge big liquid locked active">
+						<img src="~/User-Side/images/taradod.png" alt="attendance">
+					</figure>
+					<!-- /LOCKED BADGE -->
+					<figure class="badge big liquid">
+						<img src="~/User-Side/images/taradod-color.png" alt="attendance">
+					</figure>
+				
+					<!-- BADGE PROGRESS -->
+					<div class="badge-progress badge-progress5"></div>
+					<!-- /BADGE PROGRESS -->
+				</div>
+
+				<div class="badges-showcase-item column">
+					<!-- LOCKED BADGE -->
+					<figure class="badge big liquid locked active">
+						<img src="~/User-Side/images/mokatebat.png" alt="automation">
+					</figure>
+					<!-- /LOCKED BADGE -->
+					<figure class="badge big liquid">
+						<img src="~/User-Side/images/mokatebat-color.png" alt="automation">
+					</figure>
+				
+					<!-- BADGE PROGRESS -->
+					<div class="badge-progress badge-progress5"></div>
+					<!-- /BADGE PROGRESS -->
+				</div>
+
+				<div class="badges-showcase-item column">
+					<!-- LOCKED BADGE -->
+					<figure class="badge big liquid locked active">
+						<img src="~/User-Side/images/portal.png" alt="portal">
+					</figure>
+					<!-- /LOCKED BADGE -->
+					<figure class="badge big liquid">
+						<img src="~/User-Side/images/portal-color.png" alt="portal">
+					</figure>
+				
+					<!-- BADGE PROGRESS -->
+					<div class="badge-progress badge-progress5"></div>
+					<!-- /BADGE PROGRESS -->
+				</div>
+
+
+			</div>
+                          
+
+
+
+
+                     </div>
+
+
+
+
 					</div>
 					</div>
 					<!-- /COMMENT -->
 				</div>
   </div>
-  </div>
+  
            @RenderBody()
 <!-- SUBSCRIBE BANNER -->
 <div id="subscribe-banner-wrap">
@@ -1583,6 +1677,27 @@
 <script src="~/User-Side/js/user-board.js"></script>
 <!-- Footer -->
 <script src="~/User-Side/js/footer.js"></script>
+ <script>
+            $(document).ready(function() {
+              var owl = $('.owl-carousel');
+              owl.owlCarousel({
+                margin: 10,
+                nav: true,
+                loop: true,
+                responsive: {
+                  0: {
+                    items: 1
+                  },
+                  600: {
+                    items: 3
+                  },
+                  1000: {
+                    items: 5
+                  }
+                }
+              })
+            })
+          </script>
 
 </body>
 </html>
