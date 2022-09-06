@@ -1043,6 +1043,8 @@ header, .menu-bar, .banner, #services, #product-sideshow, #subscribe-banner, #fo
     margin: 0 auto
 }
 
+
+
 .logo {
     width: 250px;
     height: 56px
@@ -2789,9 +2791,9 @@ header {
 }
 
 .banner {
-    min-height: 500px;
+    min-height: 300px;
     padding-top: 90px;
-    position: relative
+    position: relative;
 }
 
     .banner.short {
