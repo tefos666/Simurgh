@@ -2791,9 +2791,9 @@ header {
 }
 
 .banner {
-    min-height: 300px;
-    padding-top: 90px;
-    position: relative;
+    min-height: 150px;
+    padding-top: 50px;
+   
 }
 
     .banner.short {
